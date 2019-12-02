@@ -1,0 +1,46 @@
+{
+  "name": "myfirstreact",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://peter14067.github.io/reactjs1",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "google-map-react": "^1.1.5",
+    "google-maps-react": "^2.0.2",
+    "react": "^16.10.2",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-addons-transition-group": "^15.6.2",
+    "react-dom": "^16.10.2",
+    "react-native": "^0.61.4",
+    "react-native-cli": "^2.0.1",
+    "react-native-elements": "^1.2.7",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.2.0",
+    "reactstrap": "^8.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "npm run build&&gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
+  }
+}

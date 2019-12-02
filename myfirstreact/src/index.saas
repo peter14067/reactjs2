@@ -1,0 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+
+
+$list:1 2 3;
+@each $box-num in $list{
+    button#{$box-num}{
+
+   font-size: 2em;
+    background:#e0000000 ;
+    float:left;
+    height:5.5vh;
+    width:12vw;
+   margin-right:0.5vw
+
+    }
+}

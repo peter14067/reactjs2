@@ -1,0 +1,69 @@
+h3{
+    color:blue;
+}
+
+
+html {
+    background-color: #4472C4;
+  }
+  
+  #root {
+    font-family: "Fjalla One", sans-serif;
+  }
+  
+  #calendar {
+    background-color: #ed7057;
+    width: 200px;
+    height: 300px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 8px 8px 0.01px #444444;
+    border-radius: 3px;
+    border-top: 25px solid #355999;
+    color: white;
+  }
+  
+  #day {
+    width: 100px;
+    padding: 10px 25%;
+    color: #525151;
+    text-align: center;
+    color: white;
+  }
+  
+  #weekday {
+    margin: -25px 25% 30px 25%;
+    color: white;
+    text-align: center;
+  }
+  
+  #date {
+    width: 150px;
+    height: 120px;
+    font-size: 80px;
+    background-color: #F4F6F5;
+    box-shadow: 2px 2px 5px #444444;
+    color: #525151;
+    border-radius: 5px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+  }
+  
+  #time_now {
+    color: #525151;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: -30px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+  }
+  
