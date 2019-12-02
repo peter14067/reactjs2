@@ -2,7 +2,7 @@
   "name": "myfirstreact",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://peter14067.github.io/reactjs1",
+  "homepage": "https://peter14067.github.io/reactjs2",
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6",
     "google-map-react": "^1.1.5",
