@@ -3,11 +3,23 @@ import React from "react"
 import 'bootstrap/dist/css/bootstrap.css';
 import { Container, Row, Col, Jumbotron, Button, Card, CardImg, CardBody, CardTitle, CardSubtitle, CardText, Badge } from 'reactstrap';
 import Logo1 from './pc1.jpg';
+import AlbumJson from './Album.json';
+
 
 
 import  './index4.css'; 
 class Main extends React.Component {
+
+    state = {
+        album: AlbumJson,
+      }
+    
+
+
   render() {
+
+
+    const { album } = this.state;
       return (
          
 
@@ -17,37 +29,32 @@ class Main extends React.Component {
         <div>
 
 
-<Row>
-    <Col sm={6} md={4} className="mb-3">
-        <Card>
-            <CardImg width="100%" src={Logo1} alt="Card image cap" />
-            <CardBody>
-                <CardTitle>商品名稱:鬱金香</CardTitle>
-                <CardSubtitle>
-                    <h4><Badge color="success">售價：小珠300，大珠800</Badge></h4>
-                </CardSubtitle>
-                <CardText>商品描述</CardText>
-                <Button color="secondary">購買</Button>
-                </CardBody>
-        </Card>
-    </Col>
-</Row>
-
-<Row>
-    <Col sm={6} md={4} className="mb-3">
-        <Card>
-            <CardImg width="100%" src={Logo1} alt="Card image cap" />
-           
-                <CardTitle>商品名稱</CardTitle>
-                <CardSubtitle>
-                    <h4><Badge color="success">售價：1000</Badge></h4>
-                </CardSubtitle>
-                <CardText>商品描述</CardText>
-                <Button color="secondary">購買</Button>
-           
-        </Card>
-    </Col>
-</Row>
+  <Row>
+            
+            {
+              album.map(product => (
+                <Col sm={6} md={4} className="mb-3">
+                  <Card>
+                    <CardImg width="100%" src={product.img} alt="Card image cap" />
+                    
+                      <CardTitle>{product.title}</CardTitle>
+                      <CardSubtitle>
+                        <h4>
+                          {
+                            product.discount
+                            ? <Badge color="danger">特價：{product.price}</Badge>
+                            : <Badge color="success">售價：{product.price}</Badge>
+                          }
+                        </h4>
+                      </CardSubtitle>
+                      <CardText>{product.desc}</CardText>
+                      <Button color="secondary">購買</Button>
+                    
+                  </Card>
+                </Col>
+              ))
+            }
+          </Row>
 
 
 
