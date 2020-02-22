@@ -1,7 +1,7 @@
 import ReactDOM from "react-dom"
 import React from "react"
 import 'bootstrap/dist/css/bootstrap.css';
-import { Button } from 'reactstrap';
+import { Button, Container, Row, Col } from 'reactstrap';
 
 
 
@@ -14,29 +14,21 @@ class Main extends React.Component {
 
 
 
-        <div class="container">
-  <div class="row">
-    <div class="col">
-      1 of 2
-    </div>
-    <div class="col">
-      1 of 2
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      1 of 3
-    </div>
-    <div class="col">
-      1 of 3
-    </div>
-    <div class="col">
-      1 of 3
-    </div>
-  </div>
+        <div>
 
 
-  <Button color="danger">danger</Button>
+ 
+
+
+
+  <Container>
+    <Row>
+        <Col xs="12" md="3"><Button color="danger" block>關於我們</Button></Col>
+        <Col xs="12" md="3"><Button color="danger" block>精油介紹</Button></Col>
+        <Col xs="12" md="3"><Button color="danger" block>聯絡我們</Button></Col>
+       
+    </Row>
+</Container>
 </div>
 
 
