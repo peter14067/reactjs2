@@ -1,8 +1,8 @@
 import React,{Component} from 'react';
-import PropTypes from 'prop-types';
-import { Button, Card, CardImg,  CardTitle, CardSubtitle, CardText, Badge } from 'reactstrap';
+import ProType from 'prop-types';
+import { Button, Card, CardImg, CardBlock, CardTitle, CardSubtitle, CardText, Badge } from 'reactstrap';
 
-export default class Product1 extends Component {
+export default class Product extends Component {
     static propTypes={
         product:PropTypes.object,
         cart:PropTypes.array,
@@ -20,6 +20,7 @@ export default class Product1 extends Component {
             <Card>
                     <CardImg width="100%" src={product.img} alt="Card image cap"/>
 
+                <CardBlock>
                 <CardTitle>{product.title} </CardTitle>
                 <CardSubtitle>
                 <h4>
@@ -33,16 +34,12 @@ export default class Product1 extends Component {
                 </h4>
 
                 </CardSubtitle>
-          <CardText>{product.desc}</CardText>
-          <Button
-            disabled={cart.find(item => item.id === product.id)}
-            color="secondary"
-            onClick={() => addToCart(product)}
-          >
-            購買
-          </Button>
-      
-      </Card>
-    );
-  }
-}
+
+
+                </CardBlock>
+
+
+            </Card>
+        )
+    }
+
