@@ -21,7 +21,7 @@ class Main extends React.Component {
 
    呼叫API
    componentDidMount = async () => {
-     const data = await fetch('https://demojson.herokuapp.com/cart').then(response => response.json());
+     const data = await fetch('https://github.com/peter14067/reactjs2/blob/gh-pages/Album.json').then(response => response.json());
 
      this.setState({
       album: data,
